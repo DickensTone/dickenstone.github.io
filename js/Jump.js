@@ -1,10 +1,11 @@
-function jump(){
-	var site;
-	var name;
-	document.getElementById(name).innerHTML = count;
-	setTimeout("jump()", 1000);
-	count--;
+function refer(){
+	if(t==0){
+		location="https://dickenstone.github.io"; // #设定跳转的链接地址
+	}
+	document.getElementById('count').innerHTML=""+t+"秒后跳转到主页"; // 显示倒计时
+	t--; // 计数器递减
 }
-function jump() {
-    this.site = "https://dickenstone.github.io/";
+function jump(){
+	var t=5;// 设定跳转的时间
+	setInterval("refer()",1000); // 启动1秒定时
 }
