@@ -6,6 +6,7 @@ function refer(){
 	t--; // 计数器递减
 }
 function jump(){
+	window.alert("404 shold show");
 	var t=5;// 设定跳转的时间
 	setInterval("refer()",1000); // 启动1秒定时
 }
