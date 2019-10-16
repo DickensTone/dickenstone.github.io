@@ -4,13 +4,18 @@
 <script type="text/javascript" src = "./js/Jump.js"></script>
 <title>404</title>
 </head>
-<body onload= "jump()">
+<body>
 
 <div align="center">
 <span class = css/error.css> Sorry!SOMETHING WRONG!</span>
 <br>
 <span id="count">5</span>后，跳转...
-
 </div> 
+<script type="text/javascript">
+	function go(){
+		document.getElementById("count").innerHTML=""+Countdown()+"秒后跳转到主页"; // 显示倒计时
+	}
 
+	
+</script>
 </body>
