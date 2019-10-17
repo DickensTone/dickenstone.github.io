@@ -9,13 +9,19 @@
 <div align="center">
 <span class = css/error.css> Sorry!SOMETHING WRONG!</span>
 <br>
-<span id="count">5</span>后，跳转...
+<span id="count">5</span>秒后，跳转...
 </div> 
 <script type="text/javascript">
-	function go(){
-		document.getElementById("count").innerHTML=""+Countdown()+"秒后跳转到主页"; // 显示倒计时
+	var time = 5;
+	while(time){
+		setTimeout("go()", 1000);
+		time--;
 	}
-
+	location = "https://dickenstone.github.io";
+	function go(){
+		//confirm("happy");
+		document.getElementById("count").innerHTML=""+time+"秒后跳转到主页"; // 显示倒计时
+	}
 	
 </script>
 </body>

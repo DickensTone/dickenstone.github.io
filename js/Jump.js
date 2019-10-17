@@ -1,7 +1,5 @@
-function Countdown(){、
-	if(window.confirm("sometext") == true){
-		clearInterval();
-	}
+function Countdown(){
+	alert("sad")
 	var t = 5;
 	return funtion(){
 		if(t == 0){
@@ -9,5 +7,8 @@ function Countdown(){、
 		}
 		return t -= 1;
 	}
-	
+}
+function start(){
+	alert("asd");
+	confirm("asd");
 }
