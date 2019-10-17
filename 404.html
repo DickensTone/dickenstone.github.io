@@ -1,27 +1,17 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<script type="text/javascript" src = "./js/Jump.js"></script>
+<script type="text/javascript" src="./js/Jump.js"></script>
 <title>404</title>
 </head>
-<body>
+<body onload="start()">
 
-<div align="center">
-<span class = css/error.css> Sorry!SOMETHING WRONG!</span>
-<br>
-<span id="count">5</span>秒后，跳转...
-</div> 
-<script type="text/javascript">
-	var time = 5;
-	while(time){
-		setTimeout("go()", 1000);
-		time--;
-	}
-	location = "https://dickenstone.github.io";
-	function go(){
-		//confirm("happy");
-		document.getElementById("count").innerHTML=""+time+"秒后跳转到主页"; // 显示倒计时
-	}
-	
-</script>
+	<div align="center">
+		<span class=css/error.css> Sorry!SOMETHING WRONG!</span> <br> <span
+			id="count">5</span>秒后，跳转到主页.
+	</div>
+	<script type="text/javascript">
+		jumpDTO.countId = "count";
+		start();
+	</script>
 </body>
